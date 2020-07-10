@@ -6,17 +6,11 @@ def my_each(array)
     i += 1
   end
 end
-# Use the collection method 
+
+my_each(array){|i| puts "#{i}"}
+# Use the collection method
 # To make the *return-value* the answer you want
 # instead of "=> nil"
-my_each(array){|i| puts "#{i}"}
-
 def new_method
-  i = 0
-collection = []
-while i < array.length
-  collection << yield(array[i])
-  i += 1
-end
-collection
+
 end
